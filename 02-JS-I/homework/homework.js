@@ -287,22 +287,31 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   
-  if(letra==='a') {
+  // if(letra==='a') {
+  //   return "Es vocal"
+  // } else if(letra==='e') {
+  //   return "Es vocal"
+  // } else if(letra==='i') {
+  //   return "Es vocal"
+  // } else if(letra==='o') {
+  //   return "Es vocal"
+  // } else if(letra==='u') {
+  //   return "Es vocal"
+  // } else {
+  //   return "Dato incorrecto"
+  // }
+  
+  
+  var array=['a', 'e', 'i', 'o', 'u']
+  for (var i=0; i<array.length;i++)
+  if(letra===array[i]) {
     return "Es vocal"
-  } else if(letra==='e') {
-    return "Es vocal"
-  } else if(letra==='i') {
-    return "Es vocal"
-  } else if(letra==='o') {
-    return "Es vocal"
-  } else if(letra==='u') {
-    return "Es vocal"
-  } else {
-    return "Dato incorrecto"
+  }
+return "Dato incorrecto"  
+    
   }
   
-  
-}
+
 
 
 
