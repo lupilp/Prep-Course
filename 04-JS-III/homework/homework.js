@@ -131,8 +131,8 @@ function multiplicarArgumentos() {
     return arguments[0];
   }
 
-  var resultado = 1;
-  for (var i = 0; i < arguments.length; i++) {
+  var resultado = arguments[0];
+  for (var i = 1; i < arguments.length; i++) {
     resultado = resultado * arguments[i];
   }
   return resultado;
